@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>final dom handlers</h1>
+    <h2 id="handler-status">default status</h2>
+
+
+
+
+    <button onclick=handleonclick1()> handle event by on click</button>
+ <button id="event-listner">handle event by 
+     addeventlistner
+ </button>
+
+
+<button onclick=handleonclick()> handle event by on click</button>
+
+
+
+
+
+<script>
+    function handleonclick1(){ 
+        console.log("button clicked");
+    }
+    function handleonclick(){ 
+       const handlerstatus=document.getElementById('handler-status');
+       handlerstatus.innerText='HANDLED BY FUNCTION ON CLICK'
+    }
+//optn 2
+document.getElementById('event-listner').addEventListener('click',function()){
+const handlerstatus=document.getElementById('handler-status');
+handlerstatus.innerText='text updated by add event listner button'
+}
+
+</script>
+</body>
+</html>
+
