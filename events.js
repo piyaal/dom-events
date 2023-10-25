@@ -38,7 +38,7 @@ function  makered(){
       makegreen.addEventListener('click',function makeGreen(){
        document.body.style.backgroundColor='green'; 
       })  
-
+ 
       //option 4 final
       document.getElementById('makeorange').addEventListener('click',function(){
         document.body.style.backgroundColor='orange';
